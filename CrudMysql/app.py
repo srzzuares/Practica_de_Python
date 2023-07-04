@@ -1,4 +1,5 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from routes.alumnoRoute import router
 app = FastAPI()
 
+app.include_router(router)
